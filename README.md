@@ -1,54 +1,52 @@
-# Talking GPT — Voice AI Assistant in Italian
+# Assistente Vocale GPT — Chatbot con Voce in Italiano
 
-A minimal but complete **voice AI assistant** that listens to your text input, generates a response via GPT-4o-mini, and reads it aloud in Italian using text-to-speech.
+Assistente AI vocale che risponde a voce in italiano: riceve un messaggio di testo, genera una risposta con **GPT-4o-mini** e la legge ad alta voce usando la sintesi vocale **gTTS**.
 
-## How it works
+## Come funziona
 
 ```
-You type a message
-    └─ OpenAI GPT-4o-mini generates a response
-    └─ gTTS converts the response to Italian speech
-    └─ Audio plays automatically
+Scrivi un messaggio
+    └─ GPT-4o-mini genera la risposta
+    └─ gTTS converte il testo in audio italiano
+    └─ L'audio viene riprodotto automaticamente
 ```
 
-## Files
+## File
 
-| File | Description |
+| File | Descrizione |
 |---|---|
-| `chatparla.py` | Main voice chatbot — GPT response + gTTS playback |
-| `CHATGPT.PY` | Text-only chatbot (no audio) |
-| `GENERALE.py` | Standalone gTTS example — generates a spoken Italian message |
+| `chatparla.py` | Chatbot principale — risposta testuale + audio |
+| `CHATGPT.PY` | Chatbot solo testo (senza audio) |
+| `GENERALE.py` | Esempio standalone di sintesi vocale con gTTS |
 
-## Setup
+## Come si usa
 
 ```bash
 pip install openai gtts
 ```
 
-Set your OpenAI API key as an environment variable:
+Imposta la chiave API come variabile d'ambiente:
 
 ```bash
 # Windows
-set OPENAI_API_KEY=your-key-here
+set OPENAI_API_KEY=la-tua-chiave
 
 # Mac/Linux
-export OPENAI_API_KEY=your-key-here
+export OPENAI_API_KEY=la-tua-chiave
 ```
 
-## Run
+Avvia il chatbot:
 
 ```bash
 python chatparla.py
 ```
 
-Type anything and the AI will respond in Italian — both in text and voice.
+## Tecnologie
 
-## Tech stack
-
-- `openai` — GPT-4o-mini for response generation
-- `gtts` (Google Text-to-Speech) — Italian speech synthesis
+- `openai` — GPT-4o-mini per la generazione delle risposte
+- `gTTS` (Google Text-to-Speech) — sintesi vocale in italiano
 - Python 3
 
-## Topics
+## Tag
 
-`python` `openai` `gpt-4o-mini` `text-to-speech` `gtts` `voice-assistant` `chatbot` `italian` `ai`
+`python` `openai` `gpt-4o-mini` `text-to-speech` `gtts` `assistente-vocale` `chatbot` `italiano` `ai`
