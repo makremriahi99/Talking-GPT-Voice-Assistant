@@ -1,0 +1,5 @@
+secret.json
+*.mp3
+.env
+__pycache__/
+*.pyc
